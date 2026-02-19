@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hotel Coastal - Estancia Confortable</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#76d6ea",
+                        "sand": "#f9f7f2",
+                        "background-light": "#f6f8f8",
+                        "background-dark": "#121e20",
+                        "coral-blue": "#76d6ea",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    img:not(section:nth-of-type(4) img) {
+        transition: all 0.3s ease-in-out;
+    }
+    img:not(section:nth-of-type(4) img):hover {
+        transform: scale(1.03);
+        filter: brightness(1.05);
+    }
+</style></head>
+<body class="dark:bg-background-dark text-[#0e181a] font-display bg-[#f4f4f4]">
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-white border-b border-sand/50 px-6 py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-2">
+<img alt="Logo" class="h-10 w-auto" data-alt="Hotel minimalist coastal wave logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIKgW5tcaAkjG5U3TkbB1vIzOwgg4jvlptMWfAWKLgi1UyeQfwkC0tT9X7xgUCcTK8vEfORpO3Z5haKBNCBCWQrgi8OCdouYUcMYAnOuFzb9RurpsR8ch0LSxu0DpK40XZ0UJcHDplEgALPwfHmkGBlGDALL-PwMndjg7WF91uvXt0RzAnVMvjjzeMsiO78pY42EO94xbrpyVK7lqAUP5HYb-16RQEzOnldo2O2fU-TmWSFlliy5JuNE0BDPgH6lMzNG3wBK9qhS0"/>
+<span class="text-xl font-bold tracking-tight text-[#0e181a]">COASTAL</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Inicio</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Habitaciones</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Servicios</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Empresas</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Contacto</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-gray-600">search</button>
+<div class="h-8 w-8 rounded-full flex items-center justify-center bg-[#e0f7fa]">
+<span class="material-symbols-outlined text-sm">person</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative h-[600px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-black/20 z-10"></div>
+<img alt="Bright coastal hotel room" class="w-full h-full object-cover" data-alt="Bright hotel room with large windows overlooking the turquoise ocean" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoRKFQ8xsmY6lwGDZXzjrYg3iH-vbv6F1_YlBjue331z5w3xthcBpJ5C50QNvnNNf3ERavbXJbDdoBxAbsiNmz7KNSQHA5vLEvWIZZPWs7V8q5YeiEBYDQVglvEPgWpIMDwrZ7BXRhNK7rVoaGShjM90FS9ASXGYA33BPV-ywt7j7FT1tdJ0Sj2YkAioo1PUTUKBr7mvUuFwnlyDa0gT3gj0Lx5h7FfS_yCqRgte6Meq8P6nmCPKYuHlFcddYj2y6JT7lCri6oCsQ"/>
+</div>
+<div class="relative z-20 text-center px-4 max-w-4xl">
+<h1 class="text-white text-5xl md:text-6xl font-extrabold leading-tight mb-6 drop-shadow-lg">
+                Estancia Confortable frente al Mar
+            </h1>
+<p class="text-white text-lg md:text-xl font-medium max-w-2xl mx-auto drop-shadow-md">
+                Habitaciones limpias, modernas y con la mejor ubicación para disfrutar de la playa.
+            </p>
+</div>
+</section>
+<!-- Section 1: Nuestras Habitaciones -->
+<section class="py-20 px-6 bg-white">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-3xl font-bold mb-12 text-center">Nuestras Habitaciones</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="group">
+<div class="aspect-[4/3] rounded-xl overflow-hidden mb-4">
+<img alt="Habitación Doble" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Modern minimalist double bedroom with white linens and sea view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCW_nA-2w0A4af_qruom-PVrgNZWPkwBbO04DWLUdJo7HaeoqBzWtItTy4z0m8D3WAIhkK68GLw7NaUl61AVHqEDknUJWQGbK4UEEcEy9AF8n5OTHbs5w3oBIFQdcmV-1htDCc6Yuwnq30d-NiVZT9mx3b1wcihjxKC6ET07QFs2eZRi8pZOG2NEkwieoKw5B8QmZTVGK-KBxJ6Xz5aWtyeo5fn-YmYk3ZbsT4BsgWv-1Yy4sHOLnIJfSoEKfpwwttMscO2bIdtCw8"/>
+</div>
+<h3 class="text-xl font-bold mb-2">Habitación Doble</h3>
+<p class="text-gray-600 leading-relaxed">Perfecta para parejas. Espaciosa, iluminada y equipada con todas las comodidades modernas para una estancia romántica.</p>
+</div>
+<!-- Card 2 -->
+<div class="group">
+<div class="aspect-[4/3] rounded-xl overflow-hidden mb-4">
+<img alt="Habitación Triple" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Comfortable triple hotel room with bright coastal decor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9VcGuxVtDCPL_mwJ9eED-ZDbXSK3Ji6SqMM89QFewO1lJNoSzKikMJkzdQfs4CUdsIPMNnX21gG7pT-Xy577KSEP80KQIlgae3bv4VmsOoTKYsHS-9u2Q0bx2cScIi_WXb1DiRz3U1K99OidKtPHhJqru8vS7Az5t5A-yPNP0SRn5V57w-GBhFKk3SloWhjOfumgxf0WJqhfqxJlDabc6BzNgEhFuaD3cS19a1J_Zvl-uj_RbpLPSwkAY4617D8uAIoHdjb2veDI"/>
+</div>
+<h3 class="text-xl font-bold mb-2">Habitación Triple</h3>
+<p class="text-gray-600 leading-relaxed">Ideal para familias pequeñas. Cuenta con tres camas individuales o una doble y una individual, adaptándose a sus necesidades.</p>
+</div>
+<!-- Card 3 -->
+<div class="group">
+<div class="aspect-[4/3] rounded-xl overflow-hidden mb-4">
+<img alt="Habitación Cuádruple" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Large four person suite with modern furnishings and balcony" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjCqSEut50GUDACkvIB23f1uLUrXZ-1iWAPwiC8F8NiTDEL7PPA-uybsEOguAag7L8A_h5Hi_5b9kyrbf_jiLETPt6JTdr52j5ntoAyQO3en2C9OM_aCEQO7CrHwd20_FGQ27ohrNuquXJ8rlYwe4DZ1gfvlvB0_swuuxot70M92fTmFzYOsr4O-VflWmYKo80ADHUmIb303YRozg9HKnqjAZVZOcmo-Zwp8goWZrsTOq77pZJW7dfu3Z2g6BsCcaqVa3kofpbwdY"/>
+</div>
+<h3 class="text-xl font-bold mb-2">Habitación Cuádruple</h3>
+<p class="text-gray-600 leading-relaxed">La mejor opción para grupos. Amplia superficie con áreas integradas para que todos disfruten del máximo confort.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Container below Rooms: Booking CTA -->
+<section class="px-6 py-10 bg-sand bg-[#e0f7fa] bg-[#f0faff]">
+<div class="max-w-7xl mx-auto">
+<div class="bg-white rounded-2xl border p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 shadow-sm border-cyan-100">
+<div class="flex-1">
+<h3 class="text-2xl font-bold mb-2">Puedes utilizar nuestro sistema de reservas para mayor comodidad</h3>
+<p class="text-gray-600">Garantiza tu habitación hoy mismo con confirmación inmediata.</p>
+</div>
+<button class="bg-primary hover:bg-primary/90 text-white font-bold py-4 px-10 rounded-xl transition-all shadow-lg shadow-primary/20 whitespace-nowrap">
+                    Reservar Ahora
+                </button>
+</div>
+</div>
+</section>
+<!-- Section 2: Desayuno Continental -->
+<section class="py-20 px-6">
+<div class="max-w-7xl mx-auto overflow-hidden rounded-3xl bg-white shadow-xl flex flex-col md:flex-row border border-sand">
+<div class="flex-1 p-10 md:p-16 flex flex-col justify-center">
+<h3 class="text-2xl font-bold mb-6">Variedad Continental</h3>
+<p class="text-gray-600 mb-8">Disfrute de una selección de bollería, fruta fresca, cereales y café recién hecho cada mañana.</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-2 text-sm text-gray-700">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+Ingredientes orgánicos locales
+</li>
+<li class="flex items-center gap-2 text-sm text-gray-700">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+Opciones veganas y sin gluten
+</li>
+<li class="flex items-center gap-2 text-sm text-gray-700">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+Servicio a la habitación disponible
+</li>
+</ul>
+<button class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-primary bg-primary/10 hover:bg-primary/20 transition-colors w-fit">
+Ver Menú de Mañana
+</button>
+</div>
+<div class="flex-1">
+<img alt="Desayuno Continental" class="w-full h-full object-cover min-h-[400px]" data-alt="Overhead shot of a sunny breakfast table with coffee and pastries near a beach" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI_GlQ66CJZbCK5ybzg3HmxkmD142aVywjIggXz3YULp9Mjyfh1RxzAtoHPnETZw-3Hu-zDZaRBJQoiy7dCXa1uV0MHqYW53kni6Aup7hMQug_AZxiVF10qYvZzTv3JJ9MLZLW9fdHY0DTnyO8aRLMA0W-zcsp-Ov2hZl9TqkjMtWYo0GUd5EFTMZlyqpz3bKM6QkKuWnJSPoSjk81KwnziWbdhg7itvgkoWH0GlzdfeDqJEvsFJIJZae4TX7k3EY_dD0PYIWCg1w"/>
+</div>
+</div>
+</section>
+<!-- Section 3: Nuestros Servicios -->
+<section class="py-20 px-6 bg-sand bg-[#e0f7fa] bg-[#f0faff]">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-3xl font-bold mb-16 text-center">Nuestros Servicios</h2>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center"><div class="flex flex-col items-center p-6 bg-white rounded-xl border border-sand/50 shadow-sm aspect-square justify-center">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-2xl">wifi</span>
+</div>
+<h3 class="text-lg font-bold mb-1">Wi-Fi Gratuito</h3>
+<p class="text-gray-600 text-xs">Alta velocidad 24/7.</p>
+</div>
+<div class="flex flex-col items-center p-6 bg-white rounded-xl border border-sand/50 shadow-sm aspect-square justify-center">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-2xl">coffee</span>
+</div>
+<h3 class="text-lg font-bold mb-1">Café Cortesía</h3>
+<p class="text-gray-600 text-xs">Premium en el lobby.</p>
+</div>
+<div class="flex flex-col items-center p-6 bg-white rounded-xl border border-sand/50 shadow-sm aspect-square justify-center">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-2xl">cleaning_services</span>
+</div>
+<h3 class="text-lg font-bold mb-1">Limpieza Diaria</h3>
+<p class="text-gray-600 text-xs">Protocolos rigurosos.</p>
+</div>
+<div class="flex flex-col items-center p-6 bg-white rounded-xl border border-sand/50 shadow-sm aspect-square justify-center">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-2xl">concierge</span>
+</div>
+<h3 class="text-lg font-bold mb-1">Recepción 24h</h3>
+<p class="text-gray-600 text-xs">Atención continua.</p>
+</div>
+<div class="flex flex-col items-center p-6 bg-white rounded-xl border border-sand/50 shadow-sm aspect-square justify-center">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-2xl">local_parking</span>
+</div>
+<h3 class="text-lg font-bold mb-1">Parking</h3>
+<p class="text-gray-600 text-xs">Plazas exclusivas.</p>
+</div>
+<div class="flex flex-col items-center p-6 bg-white rounded-xl border border-sand/50 shadow-sm aspect-square justify-center">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-2xl">fitness_center</span>
+</div>
+<h3 class="text-lg font-bold mb-1">Gimnasio</h3>
+<p class="text-gray-600 text-xs">Equipamiento moderno.</p>
+</div></div>
+</div>
+</section>
+<!-- Section 4: Servicios para Empresas -->
+<section class="py-20 px-6 bg-white">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold mb-4">Servicios para Empresas</h2>
+<p class="text-gray-600 max-w-2xl mx-auto text-lg">Soluciones integrales para el viajero de negocios y delegaciones industriales en la zona.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="group relative overflow-hidden rounded-2xl aspect-square">
+<img alt="Port Industry" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Busy modern commercial port with cargo ships and cranes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHyugZckDFZd5zmrrjY_Cx6HdN96AnUg1iYibvwWoQQEL6DWKQPZ5AEvP1tTUuo8LPRLU-YkF1D07Tw79YBN6LVzXql9xPwHSAHIU-5xW98f8eVXkrHxb6nGImlxG-niNRpIUabG4h65P1Mit4l9_sfN_dJUZAWT7NXPRvZ0Rrxv7ELz5PLRBwfrwgQ-YBg22k5Z6WgLs7QJgbCLQWdZdPVLiofCu16mkf3eOtkRLgJ7xn-lXS47rUZRex_-73IxEmr-oSat6XMNk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-6">
+<h4 class="text-white font-bold text-lg">Puerto Comercial</h4>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-2xl aspect-square">
+<img alt="Industrial Park" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Clean and modern industrial park facility under a blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc6xPr2Yy3IvK2O8_bW_jLZG7bP1yXSpYbAL_6gGorzlxbnLd3XV1Hb3adBPs3zvNvlHxp6-qgWgCxhjT_I5-HcTsePOjxSZF495DZTTcTqzR-I5LmFkeieiZ4bC0ldvvMksibtJXrIv_EtPb55JPTn82bDGFzhWp_J6xNb7kDvih_8B9fi9QmtJywORrcS44K365iEkzS068fE_m2A3QprkDrhFqvSicPZhKKTdRHyU5qcF_NZoizLN1lD3zCZg8BnT1RGjNrWuE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-6">
+<h4 class="text-white font-bold text-lg">Parque Industrial</h4>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-2xl aspect-square">
+<img alt="Power Plant" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Renewable energy power plant facility in a coastal setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_8FMwqCN39IavkHXLdVlXhkxqsQyk23lSaQpywweCXK4b4H4f5U_G4k3Al6hC63x_eMy6eEJr3ltSYCg9w-HjeE4WMbleDNDC_rGWCepBKaqxROlFoyv7qKCsJ40wnfHPZOf-X-smoyKwiYRNcSaRmlKnoIT4sYe0FolVFjH5svviaMnVj7RxMsyAj58aeNyjlo1voTj-kS1mEclM9KobJEd32DzUhRbO8TSOSBdHKOTOpoBZDbhVmmlnI8exNLYgrxCoqPop_QM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-6">
+<h4 class="text-white font-bold text-lg">Planta Energética</h4>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-2xl aspect-square">
+<img alt="Fishing Industry" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern fishing vessel fleet at the local docks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVI6MGQSA6ATllLKmvE1rcoWUjOjz2fudP9gUt50P4WnDBMtaqRxrdPTFxeIQXDf8OAzDldfGHQULcIctPTYrBP7856Ppn2mRGGpAFUNZfK17N0qnZ9jeuXIEy5jgF6I7mVei0qYnhOWz-zkQi3GJQOYH_J1xfgJTkjwtGpFQ7u8486MINaQTyLW7b_QxGOevg6S6NYDSw1G9bb-t-vSiYHXbp8Fj9igsrks42XBGxZkxFoLpU4o1vWMa-Q5EvM-jXPw5FIECoF5w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-6">
+<h4 class="text-white font-bold text-lg">Sector Pesquero</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Descubre la Ciudad -->
+<section class="py-20 px-6 bg-sand bg-[#e0f7fa] bg-[#f0faff]">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-3xl font-bold mb-12">Descubre la Ciudad</h2>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center"><div class="flex flex-col items-center p-6 bg-white rounded-xl border border-sand/50 shadow-sm aspect-square justify-center">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-2xl">wifi</span>
+</div>
+<h3 class="text-lg font-bold mb-1">Wi-Fi Gratuito</h3>
+<p class="text-gray-600 text-xs">Alta velocidad 24/7.</p>
+</div>
+<div class="flex flex-col items-center p-6 bg-white rounded-xl border border-sand/50 shadow-sm aspect-square justify-center">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-2xl">coffee</span>
+</div>
+<h3 class="text-lg font-bold mb-1">Café Cortesía</h3>
+<p class="text-gray-600 text-xs">Premium en el lobby.</p>
+</div>
+<div class="flex flex-col items-center p-6 bg-white rounded-xl border border-sand/50 shadow-sm aspect-square justify-center">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-2xl">cleaning_services</span>
+</div>
+<h3 class="text-lg font-bold mb-1">Limpieza Diaria</h3>
+<p class="text-gray-600 text-xs">Protocolos rigurosos.</p>
+</div>
+<div class="flex flex-col items-center p-6 bg-white rounded-xl border border-sand/50 shadow-sm aspect-square justify-center">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-2xl">concierge</span>
+</div>
+<h3 class="text-lg font-bold mb-1">Recepción 24h</h3>
+<p class="text-gray-600 text-xs">Atención continua.</p>
+</div>
+<div class="flex flex-col items-center p-6 bg-white rounded-xl border border-sand/50 shadow-sm aspect-square justify-center">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-2xl">local_parking</span>
+</div>
+<h3 class="text-lg font-bold mb-1">Parking</h3>
+<p class="text-gray-600 text-xs">Plazas exclusivas.</p>
+</div>
+<div class="flex flex-col items-center p-6 bg-white rounded-xl border border-sand/50 shadow-sm aspect-square justify-center">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-2xl">fitness_center</span>
+</div>
+<h3 class="text-lg font-bold mb-1">Gimnasio</h3>
+<p class="text-gray-600 text-xs">Equipamiento moderno.</p>
+</div></div>
+</div>
+</section>
+<!-- Section 6: Opiniones Booking.com -->
+<section class="py-20 px-6 bg-white border-t border-sand/30">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row items-center justify-between mb-12 gap-6">
+<div>
+<h2 class="text-3xl font-bold mb-2">Opiniones de nuestros huéspedes en Booking.com</h2>
+<p class="text-gray-500 text-sm">Basado en más de 500 reseñas verificadas</p>
+</div>
+<div class="bg-[#003580] text-white px-4 py-2 rounded flex items-center gap-3">
+<span class="font-bold">Booking.com</span>
+<span class="bg-white text-[#003580] px-1.5 py-0.5 rounded text-sm font-bold">9.2</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-8 rounded-2xl border border-sand bg-[#fcfbf7] shadow-sm">
+<div class="flex text-[#febb02] mb-4">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+</div>
+<p class="text-gray-600 italic mb-6">"Increíble ubicación frente al mar. El personal es muy atento y el desayuno es delicioso. ¡Volveremos seguro!"</p>
+<span class="block font-bold">- María Sánchez, España</span>
+</div>
+<div class="p-8 rounded-2xl border border-sand bg-[#fcfbf7] shadow-sm">
+<div class="flex text-[#febb02] mb-4">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined">star</span>
+</div>
+<p class="text-gray-600 italic mb-6">"Excelente para viajes de negocios. La conexión WiFi es muy estable y está cerca de las zonas industriales principales."</p>
+<span class="block font-bold">- Ricardo López, México</span>
+</div>
+<div class="p-8 rounded-2xl border border-sand bg-[#fcfbf7] shadow-sm">
+<div class="flex text-[#febb02] mb-4">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+</div>
+<p class="text-gray-600 italic mb-6">"Las habitaciones cuádruples son perfectas para viajar con amigos. Muy limpias y modernas. La vista es inmejorable."</p>
+<span class="block font-bold">- Ana Pérez, Colombia</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#2d2d2d] py-8 px-6 text-white border-t border-gray-700">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4"><div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex gap-6">
+<a class="text-gray-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+<a class="text-gray-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">language</span>
+</a>
+<a class="text-gray-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">info</span>
+</a>
+</div>
+<p class="text-xs text-gray-400">© 2024 Hotel Coastal. Todos los derechos reservados.</p>
+</div></div>
+</footer>
+</body></html>
